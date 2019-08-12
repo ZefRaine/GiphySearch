@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Giphy Search</h1>
+
+    <!-- This form will be where users input data about the movies -->
+    <form id="giphy-form">
+      <label for="giphy-input">Search for a gif</label>
+      <input type="text" id="giphy-input"><br>
+
+      <!-- This button will trigger our AJAX call -->
+      <input id="find-gif" type="submit" value="Giphy Search">
+    </form>
+
+    <!--Put gifs here -->
+    <div id="gifview"></div>
+
+    <script type="text/javascript" src="assets/javascript/search.js"></script>
+  </div>
+</body>
+
+</html>
