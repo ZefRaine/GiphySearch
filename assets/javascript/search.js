@@ -11,12 +11,16 @@
      const a = document.createElement("button");
      // Adding a class
      a.classList.add("gifButtons");
-     // Adding a data-attribute with a value of the movie at index i
+     // Adding a data-attribute with a value of the gif at index i
      a.setAttribute("data-name", gifButtons[i]);
-     // Providing the button's text with a value of the movie at index i
+     // Providing the button's text with a value of the gif at index i
      a.innerHTML = gifButtons[i];
      // Adding the button to the HTML
      document.getElementById("buttons-view").append(a);
+     //click listener call gifFun() pass gifButtons[i];
+     a.addEventListener("click", function (){
+       gifFun(gifButtons[i]);
+     })
    }
  }
  renderButtons();
@@ -25,6 +29,13 @@
 
    // Here we grab the text from the input box
    const gif = document.getElementById("giphy-input").value;
+   // add gif value to the gifButtons
+   gifButtons.push(gif);
+   renderButtons();
+  });
+  function gifFun(gif){
+
+   // ------------------------------------------------------ //
    const giphyAPI = "?api_key=cLyoTr0FTNVeAUK0vFm01tASTz7txHt1"
 
    // Here we construct our URL
@@ -62,4 +73,4 @@
      }
 
    });
- });
+ };
