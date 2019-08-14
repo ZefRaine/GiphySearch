@@ -8,23 +8,23 @@
 </head>
 
 <body>
-  <div class="container">
-    <h1>Add your Favorite Gifs!</h1>
+  <div class="card text-center text-primary bg-light">
+    <h1 class="card-header">Add your Favorite Gifs!</h1>
 
     <!--Gif Dump-->
-    <div id="buttons-view" value="123"></div>
+    <div class= "navbar-brand" id="buttons-view" value="123"></div>
 
     <!-- This form will be where users input data about the movies -->
-    <form id="giphy-form">
-      <label for="giphy-input">Add gifs</label>
-      <input type="text" id="giphy-input"><br>
+    <form class="input-group mt-3"id="giphy-form">
+      <span class="input-group-text"for="giphy-input">Add gifs</span>
+      <input  type="text" id="giphy-input"><br>
 
       <!-- This button will trigger our AJAX call -->
       <input id="add-gif" type="submit" value="Giphy Search">
     </form>
 
     <!--Put gifs here -->
-    <div id="gifview"></div>
+    <div class="img-thumbnail bg-light" id="gifview"></div>
 
     <script type="text/javascript" src="assets/javascript/search.js"></script>
   </div>

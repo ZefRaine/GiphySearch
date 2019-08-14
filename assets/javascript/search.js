@@ -7,7 +7,7 @@
    // Looping through the array of gifButtons
    for (let i = 0; i < gifButtons.length; i++) {
 
-     // Then dynamicaly generating buttons for each movie in the array.
+     // Then dynamicaly generating buttons for each term in the array.
      const a = document.createElement("button");
      // Adding a class
      a.classList.add("gifButtons");
